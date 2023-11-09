@@ -1,0 +1,54 @@
+
+@font-face {
+  font-display: swap;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  src: url('./fonts/outfit-v11-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/outfit-v11-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/outfit-v11-latin-500.woff2') format('woff2');
+}
+
+
+
+
+
+
+
+/* Tailwind css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer{
+
+  .site-container{
+    @apply max-w-full mx-auto px-5
+  }
+
+  html, body, #root {
+    @apply h-full w-full
+  }
+
+  body{
+    @apply bg-[#10141E] font-outFitFont
+  }
+  .sidebar{
+    @apply absolute left-5 top-8 max-h-[900px] w-[100]
+  }
+
+}
